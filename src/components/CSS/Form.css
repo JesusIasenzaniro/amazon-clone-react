@@ -1,0 +1,34 @@
+.container__outer {
+    margin-top: 50px;
+    /* height: 60vh; */
+}
+.form__title h3 {
+    color: rgb(72, 103, 117);
+    margin: 10px 0 20px 0;
+}
+.container__form {
+    background-color: white;
+    height: fit-content;
+    width: 70%;
+    /* margin: 30px 0px; */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px -1px #000000;
+}
+.form__categorie {
+    list-style: none;
+    margin: 30px 0;
+    color: rgb(120, 166, 187);
+}
+.submit__button {
+    margin-top: 30px;
+}
+.react-tel-input .form-control {
+    width: 100% !important;
+    height: 55px !important;
+}
+
+.react-tel-input .form-control:focus-within {
+    border-color: #12005e !important;
+    /* background-color: aqua !important; */
+}

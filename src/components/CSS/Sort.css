@@ -1,0 +1,34 @@
+.container__sort {
+    margin: 30px 0px;
+}
+.container__sort div {
+    margin: 10px;
+}
+.container__sort h4 {
+    color: rgb(72, 103, 117);
+}
+
+.products__found {
+    margin-left: 10px;
+}
+
+.number__of__products {
+    color: rgb(31, 69, 87);
+}
+
+.divider {
+    border-top: 1px solid black;
+}
+.sort__input {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(120, 166, 187);
+    color: white;
+    border: rgb(120, 166, 187);
+    box-shadow: 1px 2px 5px -1px #000000;
+}
+label {
+    color: rgb(31, 69, 87);
+}

@@ -1,0 +1,14 @@
+.header__options {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+.header__options:hover {
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+    border-right: 2px solid #ff9900;
+    border-left: 2px solid #ff9900;
+}
+
+.img__container img {
+    width: 40px;
+}

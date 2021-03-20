@@ -1,0 +1,14 @@
+.container__category {
+    /* margin-top: 100px; */
+}
+.container__category__product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    text-transform: capitalize;
+    padding: 15px;
+    box-shadow: 1px 2px 5px -1px #000000;
+    color: rgb(57, 90, 105);
+}

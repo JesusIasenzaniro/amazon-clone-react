@@ -1,0 +1,17 @@
+.checkout__page__empty {
+    min-height: 100vh;
+}
+.checkout__page__empty h2 {
+    color: rgb(72, 103, 117);
+}
+
+.link__checkout {
+    text-decoration: none;
+}
+
+.container__button__checkout {
+    margin: 15px 0;
+}
+.container__stripe__checkout {
+    min-height: 100vh;
+}

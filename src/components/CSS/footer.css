@@ -1,0 +1,126 @@
+.container__footer {
+    margin-top: 250px;
+}
+.container__footer button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    color: white;
+    background-color: rgb(57, 90, 105);
+    cursor: pointer;
+    outline: none;
+}
+.container__footer button:hover {
+    background-color: rgb(31, 69, 87);
+    opacity: 0.9;
+}
+
+.container__footer__info {
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.section__options:hover {
+    cursor: pointer;
+    text-decoration: underline white;
+}
+.container__logo {
+    padding-top: 20px;
+}
+.container__logo:hover {
+    cursor: pointer;
+}
+.container__languages {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.languages {
+    padding: 5px 5px;
+}
+.languages:hover {
+    cursor: pointer;
+    text-decoration: underline white;
+}
+.container__other__options {
+    padding-top: 40px;
+}
+.other__options {
+    padding-bottom: 15px;
+}
+
+.other__options:hover {
+    cursor: pointer;
+    text-decoration: underline white;
+}
+/* .use__terms {
+    padding: 5px 5px;
+} */
+.options,
+.copyright {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5px;
+}
+.options:hover {
+    cursor: pointer;
+    text-decoration: underline white;
+}
+.container__use__terms {
+    height: 90px;
+    padding: 20px 0;
+}
+
+@media (max-width: 390px) {
+    #container__modal {
+        width: 310px;
+    }
+    .total__price__pay-component {
+        font-size: 15px;
+        margin: 12px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+@media (max-width: 600px) {
+    .container__section,
+    .container__other__options,
+    .container__second__options,
+    .use__terms,
+    .container__cart__products,
+    .container__main__picture,
+    .mini__gallery,
+    .container__modal__gallery,
+    .titles,
+    .container__advise {
+        text-align: center;
+    }
+
+    .mini__gallery {
+        justify-content: center;
+    }
+    .mini__gallery {
+        margin-left: 0px;
+    }
+    .container__gallery {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 50vh;
+        border-radius: 0px;
+    }
+    .container__pay {
+        padding: 12px;
+    }
+    .image__product {
+        width: 180px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container__section,
+    .container__other__options,
+    .container__second__options,
+    .use__terms,
+    .container__cart__products {
+        text-align: center;
+    }
+}

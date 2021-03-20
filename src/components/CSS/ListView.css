@@ -1,0 +1,37 @@
+.container__list {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px -1px #000000;
+}
+.container__list h4 {
+    text-transform: capitalize;
+    /* margin-bottom: 10px; */
+}
+.container__details {
+    width: 40vw;
+}
+.container__inner {
+    width: fit-content;
+    height: fit-content;
+}
+
+.container__inner img {
+    width: 150px;
+    height: 150px;
+}
+
+.container__price {
+    margin: 5px 0 10px 0;
+    color: rgb(120, 166, 187);
+}
+
+@media (max-width: 960px) {
+    .container__inner {
+        text-align: center;
+    }
+    .container__details h4 {
+        margin-top: 10px;
+    }
+}

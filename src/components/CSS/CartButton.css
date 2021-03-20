@@ -1,0 +1,7 @@
+.shopping__container {
+    display: flex;
+    align-items: center;
+}
+.icon__container {
+    margin-right: 5px;
+}

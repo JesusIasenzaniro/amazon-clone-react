@@ -1,0 +1,122 @@
+.container__cart__item {
+    /* display: flex;
+    align-items: center;
+    margin-bottom: 30px; */
+}
+.delete__cart__product {
+    /* text-align: center; */
+    /* margin: 0px 10px; */
+}
+.price__cart {
+    /* color: rgb(120, 166, 187); */
+}
+.product__item__container {
+    margin-top: 50px;
+}
+.cart__item h4 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    /* color: rgb(72, 103, 117); */
+    /* text-align: center; */
+}
+
+.cart__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 20px 0px;
+}
+.details__product {
+    /* display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 0 30px; */
+}
+
+.color__product button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+
+    border: none;
+
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+.color__product {
+    /* margin-top: 10px;
+    display: flex; */
+}
+
+.color__product p {
+    margin: 0px 5px;
+    font-size: 22px;
+    color: rgb(72, 103, 117);
+}
+.inner__color__product {
+    margin: 0 60px;
+}
+.price__cart__product {
+    display: flex;
+    align-items: center;
+}
+.price__cart__product p {
+    margin: 0 20px;
+    font-size: 20px;
+    color: rgb(120, 166, 187);
+}
+.price__cart__product h2 {
+    font-size: 20px;
+    color: rgb(72, 103, 117);
+}
+.amount__cart__product {
+    margin: 20px 0;
+}
+.price__sm__down {
+    margin: 50px 0px;
+    color: rgb(120, 166, 187);
+}
+.price__sm {
+    color: rgb(72, 103, 117);
+    margin: 0 35px;
+}
+.color__title__sm {
+    color: rgb(72, 103, 117);
+    margin: 40px 0;
+}
+/* .color__product__sm {
+    margin-bottom: 50px;
+} */
+.remove__item__sm {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 390px) {
+}
+@media (max-width: 600px) {
+}
+@media (max-width: 1240px) {
+    .inner__color__product {
+        margin: 0 68px;
+    }
+}
+
+@media (max-width: 960px) {
+    .details__product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container__cart__item {
+        flex-direction: column;
+    }
+    .price__sm {
+        color: rgb(72, 103, 117);
+        margin: 0 35px;
+    }
+}

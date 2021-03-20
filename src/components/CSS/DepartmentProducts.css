@@ -1,0 +1,8 @@
+.product__department__details {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.product__department__details h4 {
+    color: rgb(120, 166, 187);
+}

@@ -1,0 +1,18 @@
+.container__filters__list {
+    display: flex;
+}
+
+.container__search__input {
+    margin-top: 30px;
+}
+@media (max-width: 390px) {
+}
+@media (max-width: 600px) {
+}
+
+@media (max-width: 960px) {
+    .container__filters__list {
+        display: block;
+        text-align: center;
+    }
+}

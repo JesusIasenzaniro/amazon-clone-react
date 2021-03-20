@@ -1,0 +1,20 @@
+.container__success__payment h4 {
+    padding-bottom: 20px;
+    color: rgb(53, 77, 88);
+}
+
+.container__error__payment p {
+    padding-bottom: 20px;
+}
+.container__error__payment h4 {
+    color: rgb(53, 77, 88);
+    padding-bottom: 20px;
+}
+
+.container__error__payment p span {
+    color: rgb(53, 77, 88);
+    /* color: rgb(120, 166, 187); */
+}
+.result-message {
+    padding-top: 10px;
+}

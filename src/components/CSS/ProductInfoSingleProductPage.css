@@ -1,0 +1,102 @@
+.container__info {
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    height: fit-content;
+    margin: 30px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px -1px #000000;
+}
+
+.container__assessment {
+    padding: 10px 0;
+}
+.container__reviews {
+    padding: 10px;
+}
+
+.reviews {
+    color: rgb(120, 166, 187);
+}
+.container__assessment__title {
+    color: rgb(16, 28, 34);
+}
+.product__name {
+    text-transform: capitalize;
+    color: rgb(57, 90, 105);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.price {
+    color: rgb(82, 129, 151);
+}
+.container__description {
+    padding-top: 10px;
+}
+.description {
+    line-height: 25px;
+    color: rgb(57, 90, 105);
+}
+.container__add {
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    height: fit-content;
+    margin: 30px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px -1px #000000;
+}
+.container__amount {
+    margin: 15px 0px;
+}
+.dropdown__button {
+    margin-top: 10px;
+}
+.container__quatity {
+    margin-right: 5px;
+}
+.container__color {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.container__secure__transaction {
+    margin-top: 10px;
+}
+.secure__transaction {
+    color: rgb(57, 90, 105);
+}
+.container__color__title {
+    margin-right: 10px;
+}
+.color__btn {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #222;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.active2 {
+    border: none;
+    outline: none;
+    opacity: 1;
+}
+
+.Link {
+    text-decoration: none;
+}
+
+.amount {
+    margin: 0px 10px;
+}

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(230, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+.Link {
+    text-decoration: none;
+    color: white;
+}
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.loading {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    border-top-color: rgb(13, 141, 141);
+    animation: spinner 0.6s linear infinite;
+}
+
+.carousel__container {
+    z-index: -1;
+    margin-bottom: -50px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.container__featured__products {
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    width: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+.container__featured__products h3 {
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    color: rgb(57, 90, 105);
+}
+.Link__home__products {
+    text-decoration: none;
+}
+.container__products__images img {
+    width: 160px;
+    height: 160px;
+}
+.container__carousel {
+    margin-top: 50px;
+}
+.container__category__product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 1px 2px 5px -1px #000000;
+    color: rgb(57, 90, 105);
+}
+.container__category {
+    margin-top: 190px;
+}
+.carousel__title h3 {
+    text-transform: capitalize;
+    color: rgb(57, 90, 105);
+    margin-bottom: 10px;
+}
+
+.carousel__title h4 {
+    text-transform: capitalize;
+    color: rgb(120, 166, 187);
+    margin-bottom: 10px;
+}
+.container__carousel_products {
+    background-color: white;
+    height: 350px;
+}
+.container__carousel_products h1 {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.container__carousel_products main {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+.price {
+    margin-top: 10px;
+    color: rgb(57, 90, 105);
+}
+
+.container__footer {
+    margin-top: 100px;
+}

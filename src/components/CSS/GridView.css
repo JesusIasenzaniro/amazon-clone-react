@@ -1,0 +1,23 @@
+.container__grid__images {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px -1px #000000;
+}
+.container__title__name {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container__title__name h4 {
+    text-transform: capitalize;
+}
+.grid__images {
+    width: 150px;
+    height: 150px;
+}
+.container__grid__price {
+    color: rgb(120, 166, 187);
+    text-align: center;
+    margin-top: 10px;
+}

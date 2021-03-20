@@ -1,0 +1,17 @@
+.page__100 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.link__to__home {
+    text-decoration: none;
+    color: white;
+}
+.container__empty__title {
+    margin-bottom: 20px;
+}
+.cart__inner__container {
+    width: 85%;
+}

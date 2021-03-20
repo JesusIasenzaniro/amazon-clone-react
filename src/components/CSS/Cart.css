@@ -1,0 +1,114 @@
+.cart__container {
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    margin: 30px 0px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px -1px #000000;
+}
+.cart__item__container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+}
+.cesta {
+    padding-left: 20px;
+}
+.price__title {
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.divider {
+    width: 98%;
+}
+.clear__cart__button {
+    margin: 20px 0px;
+}
+.container__product {
+    padding: 10px 10px;
+}
+.product {
+    width: 60px;
+}
+.price {
+    padding-right: 10px;
+}
+.total__price {
+    padding-right: 20px;
+}
+.number {
+    font-weight: bold;
+}
+.button__save {
+    margin-bottom: 10px;
+}
+.price__title__xs {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.price__xs {
+    font-family: 'Roboto', sans-serif;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.total__price__xs {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+@media (max-width: 390px) {
+    #container__modal {
+        width: 310px;
+    }
+    .total__price__pay-component {
+        font-size: 15px;
+        margin: 12px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+@media (max-width: 600px) {
+    .container__section,
+    .container__other__options,
+    .container__second__options,
+    .use__terms,
+    .container__cart__products,
+    .container__main__picture,
+    .mini__gallery,
+    .container__modal__gallery,
+    .titles,
+    .container__advise {
+        text-align: center;
+    }
+
+    .mini__gallery {
+        justify-content: center;
+    }
+    .mini__gallery {
+        margin-left: 0px;
+    }
+    .container__gallery {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 50vh;
+        border-radius: 0px;
+    }
+    .container__pay {
+        padding: 12px;
+    }
+    .image__product {
+        width: 180px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container__section,
+    .container__other__options,
+    .container__second__options,
+    .use__terms,
+    .container__cart__products {
+        text-align: center;
+    }
+}
