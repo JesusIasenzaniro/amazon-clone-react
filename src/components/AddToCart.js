@@ -68,18 +68,18 @@ export const AddToCart = ({ product }) => {
         <Grid className='container__add'>
             <Link to='/CartPage' className='Link' onClick={() => addToCart(id, mainColor, amount, product)}>
                 <Grid>
-                    <ButtonStyled>AÑADIR A LA LISTA</ButtonStyled>
+                    <ButtonStyled>ADD TO THE LIST</ButtonStyled>
                 </Grid>
             </Link>
             {user ? (
                 <Link to='/FormPage' className='Link'>
                     <Grid>
-                        <ButtonStyled2>COMPRAR YA</ButtonStyled2>
+                        <ButtonStyled2>BUY NOW</ButtonStyled2>
                     </Grid>
                 </Link>
             ) : (
                 <Grid onClick={loginWithRedirect}>
-                    <ButtonStyled2>COMPRAR YA</ButtonStyled2>
+                    <ButtonStyled2>BUY NOW</ButtonStyled2>
                 </Grid>
             )}
             <Grid container justify='center' alignItems='center' className='container__amount'>
@@ -104,7 +104,7 @@ export const AddToCart = ({ product }) => {
             <Grid container justify='center' alignItems='center' className='container__secure__transaction'>
                 <LockIcon style={{ color: 'rgb(57, 90, 105)' }}></LockIcon>
 
-                <div className='secure__transaction'>Transacción segura</div>
+                <div className='secure__transaction'>Secure Transaction</div>
             </Grid>
         </Grid>
     );
