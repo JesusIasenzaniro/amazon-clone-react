@@ -5,6 +5,7 @@
 body {
     background-color: rgb(230, 255, 255);
     font-family: 'Roboto', sans-serif;
+    /* min-height: 500px; */
 }
 .Link {
     text-decoration: none;
@@ -15,10 +16,13 @@ body {
         transform: rotate(360deg);
     }
 }
+.container__loading {
+    min-height: 650px;
+}
 .loading {
     width: 6rem;
     height: 6rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 10rem;
     border-radius: 50%;
     border: 4px solid #ccc;
@@ -99,8 +103,4 @@ body {
 .price {
     margin-top: 10px;
     color: rgb(57, 90, 105);
-}
-
-.container__footer {
-    margin-top: 100px;
 }

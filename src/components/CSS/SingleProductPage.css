@@ -1,6 +1,7 @@
 .container__single__product {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    min-height: 500px;
 }
-.container__department__products {
+/* .container__department__products {
     margin-top: 100px;
-}
+} */

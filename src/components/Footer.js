@@ -28,7 +28,7 @@ export const Footer = () => {
             <Grid container alignItems='center' style={{ backgroundColor: '#030c1bf6' }} className='container__use__terms'>
                 <Container maxWidth='md'>
                     <Grid container justify='center' className='copyright'>
-                        <TypographyStyled> © 1996-2020, AmazonExpress.com, Inc. o afiliados. Todos los derechos reservados.</TypographyStyled>
+                        <TypographyStyled> © 1996-2020, AmazonExpress.com, Inc. or affiliates. All rights reserved.</TypographyStyled>
                     </Grid>
                     {/* </Grid> */}
                 </Container>
