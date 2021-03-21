@@ -76,10 +76,8 @@ export const SearchInput = () => {
                 <Paper component='form' className={classes.root}>
                     <InputBase
                         id='standard-full-width'
-                        label='Label'
                         className={classes.input}
-                        placeholder=''
-                        inputProps={{ 'aria-label': 'search ' }}
+                        placeholder='search'
                         onChange={updateFilters}
                         fullWidth
                         name='text'

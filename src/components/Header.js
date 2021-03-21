@@ -80,7 +80,7 @@ function Header() {
                     </Grid>
                 </Hidden>
                 <Hidden xsDown>
-                    <Grid item lg={5} md={8} sm={7} xs={3} className='container__search__input'>
+                    <Grid item lg={6} md={8} sm={7} xs={3} className='container__search__input'>
                         <SearchInput />
                     </Grid>
                 </Hidden>
