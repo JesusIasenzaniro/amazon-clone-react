@@ -10,9 +10,9 @@ const ProductsPages = () => {
         <Container maxWidth='lg'>
             <Grid className='container__filters__list'>
                 <Grid>
-                    <Grid className='container__search__input'>
+                    {/* <Grid className='container__search__input'>
                         <SearchInput />
-                    </Grid>
+                    </Grid> */}
                     <Filters />
                 </Grid>
                 <Grid container justify='center' alignItems='flex-start' className='container__product__list'>

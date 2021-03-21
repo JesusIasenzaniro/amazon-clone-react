@@ -15,8 +15,8 @@ export const FeaturedProducts = () => {
         return <Error />;
     }
     return (
-        <Grid container item lg={12} justify='space-between' alignItems='center'>
-            {featured.slice(0, 6).map((product) => {
+        <Grid container item lg={12} justify='center' alignItems='center' className='single__product__container'>
+            {featured.map((product) => {
                 return <Product key={product.id} {...product} />;
             })}
         </Grid>

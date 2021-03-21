@@ -1,3 +1,7 @@
+.container__search__input {
+    margin: 8px 0;
+}
+
 .header__options {
     border-bottom: 1px solid transparent;
     cursor: pointer;

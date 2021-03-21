@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles, fade } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import { useFilterContext } from '../context/FilterContext';
-
+import '../components/CSS/Header.css';
 const BootstrapInput = withStyles((theme) => ({
     root: {
         'label + &': {
@@ -34,12 +34,12 @@ export const SearchInput = () => {
     // const colors = getUniqueValues(all_products, 'colors');
     // console.log(categories);
     return (
-        <div>
+        <div className='container__search__input'>
             <form onSubmit={(e) => e.preventDefault()}>
                 <BootstrapInput
                     id='standard-full-width'
                     label='Label'
-                    style={{ margin: 8 }}
+                    // style={{ marginTop: '8px', marginBottom: '8px' }}
                     fullWidth
                     name='text'
                     value={text}
