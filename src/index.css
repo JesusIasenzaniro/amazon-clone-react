@@ -23,7 +23,6 @@ body {
 .loading {
     width: 6rem;
     height: 6rem;
-    /* margin: 0 auto; */
     margin-top: 10rem;
     border-radius: 50%;
     border: 4px solid #ccc;
@@ -33,7 +32,7 @@ body {
 
 .carousel__container {
     z-index: -1;
-    margin-bottom: -190px;
+    margin-bottom: -240px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
