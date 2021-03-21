@@ -10,12 +10,14 @@ import { withStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
 import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
-export const ButtonStyled = withStyles((theme) => ({
+
+export const ButtonStyled = withStyles(() => ({
     root: {
         color: 'rgb(120, 166, 187)',
         width: '30px',
     },
 }))(Button);
+
 const CartItem = ({ id, image, name, color, price, amount }) => {
     const { removeItem, toggleAmount } = useCartContext();
 

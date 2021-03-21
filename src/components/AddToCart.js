@@ -68,11 +68,11 @@ export const AddToCart = ({ product }) => {
         <Grid className='container__add'>
             <Link to='/CartPage' className='Link' onClick={() => addToCart(id, mainColor, amount, product)}>
                 <Grid>
-                    <ButtonStyled>ADD TO THE LIST</ButtonStyled>
+                    <ButtonStyled>ADD TO CART</ButtonStyled>
                 </Grid>
             </Link>
             {user ? (
-                <Link to='/FormPage' className='Link'>
+                <Link to='/FormPage' className='Link' onClick={() => addToCart(id, mainColor, amount, product)}>
                     <Grid>
                         <ButtonStyled2>BUY NOW</ButtonStyled2>
                     </Grid>

@@ -4,7 +4,7 @@
 }
 .main__picture {
     width: 350px;
-    height: 50vh;
+    height: 380px;
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
@@ -71,8 +71,8 @@
     padding-bottom: 10px;
 }
 .main__modal__picture {
-    width: 220px;
-    height: 30vh;
+    width: 240px;
+    height: 250px;
     padding: 10px;
     margin: 40px;
     border-radius: 10px;
