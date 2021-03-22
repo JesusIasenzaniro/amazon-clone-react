@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles, fade } from '@material-ui/core/styles';
+// import { withStyles, fade } from '@material-ui/core/styles';
 // import InputBase from '@material-ui/core/InputBase';
 import { useFilterContext } from '../context/FilterContext';
 import '../components/CSS/Header.css';
@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -62,14 +63,19 @@ const useStyles = makeStyles((theme) => ({
 //         },
 //     },
 // }))(InputBase);
+
 export const SearchInput = () => {
+    const history = useHistory();
     const {
         filters: { text },
         updateFilters,
     } = useFilterContext();
 
-    const classes = useStyles();
+    const searchProduct = () => {
+        history.push('/ProductsPages');
+    };
 
+    const classes = useStyles();
     return (
         <div className='container__search__input'>
             <form>
@@ -86,8 +92,8 @@ export const SearchInput = () => {
                             shrink: true,
                         }}
                     />
-                    <IconButton type='submit' className={classes.iconButton} aria-label='search'>
-                        <SearchIcon />
+                    <IconButton className={classes.iconButton} aria-label='search'>
+                        <SearchIcon onClick={searchProduct} />
                     </IconButton>
                 </Paper>
             </form>
