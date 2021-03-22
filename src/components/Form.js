@@ -78,24 +78,6 @@ const Form = () => {
                             shrink: true,
                         }}
                     />
-                    <Grid container justify='center' className='form__categorie'>
-                        Email
-                    </Grid>
-
-                    <TextValidator
-                        label='Email'
-                        onChange={(e) => setEmail(e.target.value)}
-                        name='email'
-                        value={email}
-                        validators={['required', 'isEmail']}
-                        errorMessages={['this field is required', 'email is not valid']}
-                        fullWidth
-                        inputlabelprops={{
-                            shrink: true,
-                        }}
-                        id='outlined-basic'
-                        variant='outlined'
-                    />
 
                     <Grid container justify='center' className='form__categorie'>
                         Contact Number
