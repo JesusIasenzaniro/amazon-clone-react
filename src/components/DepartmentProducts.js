@@ -70,11 +70,11 @@ export const DepartmentProducts = ({ productChange, productId, stars }) => {
             >
                 {products.map((product) => {
                     const { id, image, category, name } = product;
-                    if (category === productChange) {
+                    if (category === productChange && product.length >= 3) {
                         if (id === productId) {
-                            // eslint-disable-next-line array-callback-return
                             return;
                         }
+
                         return (
                             <div>
                                 <Grid key={id} className='container__carousel_products' container justify='center' alignItems='center'>

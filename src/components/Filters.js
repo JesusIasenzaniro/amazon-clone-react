@@ -54,7 +54,6 @@ const Filters = () => {
                         if (c === 'all') {
                             return (
                                 <button key={index} name='color' onClick={updateFilters} data-color='all' className={`${color === 'all' ? 'all__btn  active__all__selection ' : 'all__btn'}`}>
-                                    {' '}
                                     all
                                 </button>
                             );
