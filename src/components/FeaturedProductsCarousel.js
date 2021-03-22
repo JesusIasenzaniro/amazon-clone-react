@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import Carousel from 'react-multi-carousel';
@@ -23,10 +24,7 @@ export const ButtonStyled = withStyles(() => ({
 }))(Button);
 
 export const FeaturedProductsCarousel = () => {
-    const {
-        filters: { category },
-        updateFilters,
-    } = useFilterContext();
+    const { updateFilters } = useFilterContext();
 
     const history = useHistory();
 

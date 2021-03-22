@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import { Product } from '../components/Product';
 import { useProductsContext } from '../context/ProductsContext';

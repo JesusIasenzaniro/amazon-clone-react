@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { ADD_TO_CART, REMOVE_CART_ITEM, CLEAR_CART, TOGGLE_AMOUNT, COUNT_CART_TOTALS } from '../components/actions';
 
 const CartReducer = (state, action) => {

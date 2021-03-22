@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import GridOnIcon from '@material-ui/icons/GridOn';
 import ListAltIcon from '@material-ui/icons/ListAlt';
 import Grid from '@material-ui/core/Grid';
-import { SearchInput } from '../components/SearchInput';
+// import { SearchInput } from '../components/SearchInput';
 export const ButtonStyled = withStyles((theme) => ({
     root: {
         backgroundColor: 'rgb(120, 166, 187)',

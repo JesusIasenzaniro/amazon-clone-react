@@ -8,7 +8,6 @@ import AmountButtons from '../components/AmountButtons';
 import '../components/CSS/ProductInfoSingleProductPage.css';
 import CheckIcon from '@material-ui/icons/Check';
 import { useCartContext } from '../context/CartContext';
-import { useUserContext } from '../context/UserContext';
 import { useAuth0 } from '@auth0/auth0-react';
 const ButtonStyled = withStyles((theme) => ({
     root: {

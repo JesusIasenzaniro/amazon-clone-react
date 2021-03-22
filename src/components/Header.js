@@ -1,7 +1,7 @@
 import React from 'react';
 import '../components/CSS/Header.css';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+// import Toolbar from '@material-ui/core/Toolbar';
 import { Grid, Hidden } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import Amazon__logo from '../assets/amazon__logo.png';
@@ -21,7 +21,7 @@ export const ButtonStyled = withStyles(() => ({
         backgroundColor: 'transparent',
         color: 'white',
         fontSize: '12px',
-        marginRight: '10px',
+        // marginRight: '7px',
         '&:hover': {
             backgroundColor: 'white',
             color: '#FF9900',
@@ -75,35 +75,34 @@ function Header() {
                                 <h5> Hello, {user ? user.given_name : 'user'}</h5>{' '}
                             </div>
                         ) : (
-                            <div className='container__header__items' onClick={loginWithRedirect}>
-                                <ButtonStyled1>
+                            <ButtonStyled1 onClick={loginWithRedirect}>
+                                <div className='container__header__items'>
                                     <h5>Register</h5>
-                                </ButtonStyled1>
-                            </div>
+                                </div>
+                            </ButtonStyled1>
                         )}
                     </Grid>
                 </Hidden>
                 <Hidden mdDown>
                     <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
-                        <ButtonStyled>
-                            {myUser ? (
-                                <div>
-                                    <h5
-                                        onClick={() => {
-                                            clearCart();
-                                            logout({ returnTo: window.location.origin });
-                                        }}
-                                    >
-                                        {' '}
-                                        Log out
-                                    </h5>
-                                </div>
-                            ) : (
-                                <div className='options__container' onClick={loginWithRedirect}>
+                        {myUser ? (
+                            <div>
+                                <ButtonStyled
+                                    onClick={() => {
+                                        clearCart();
+                                        logout({ returnTo: window.location.origin });
+                                    }}
+                                >
+                                    <h5>Log out</h5>
+                                </ButtonStyled>
+                            </div>
+                        ) : (
+                            <ButtonStyled onClick={loginWithRedirect}>
+                                <div className='options__container'>
                                     <h5> Log in </h5>
                                 </div>
-                            )}
-                        </ButtonStyled>
+                            </ButtonStyled>
+                        )}
                     </Grid>
                 </Hidden>
 

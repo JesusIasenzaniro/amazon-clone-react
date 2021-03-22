@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { Grid } from '@material-ui/core';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';

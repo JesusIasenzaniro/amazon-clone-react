@@ -83,7 +83,7 @@ export const SearchInput = () => {
                     <InputBase
                         id='standard-full-width'
                         className={classes.input}
-                        placeholder='search'
+                        placeholder='search for dining...'
                         onChange={updateFilters}
                         fullWidth
                         name='text'

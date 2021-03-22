@@ -53,16 +53,16 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
                         </div>
                     </Grid>
                     <Grid container alignItems='center' item lg={2} md={2} sm={8} xs={12} className='delete__cart__product'>
-                        <ButtonStyled>
-                            <DeleteIcon onClick={() => removeItem(id)} />
+                        <ButtonStyled onClick={() => removeItem(id)}>
+                            <DeleteIcon />
                         </ButtonStyled>
                     </Grid>
                 </Hidden>
 
                 <Hidden mdUp>
                     <Grid container justify='center' className='remove__item__sm'>
-                        <ButtonStyled>
-                            <DeleteIcon onClick={() => removeItem(id)} />
+                        <ButtonStyled onClick={() => removeItem(id)}>
+                            <DeleteIcon />
                         </ButtonStyled>
                     </Grid>
                     <Container maxWidth='sm'>

@@ -70,18 +70,18 @@ export const DrawerHeader = () => {
                 )}
                 <Divider />
                 {myUser ? (
-                    <ListItem button>
+                    <ListItem button onClick={logout}>
                         <ListItemIcon>
                             <ExitToAppIcon />
                         </ListItemIcon>
-                        <ListItemText onClick={logout}>Log out</ListItemText>
+                        <ListItemText>Log out</ListItemText>
                     </ListItem>
                 ) : (
-                    <ListItem button>
+                    <ListItem button onClick={loginWithRedirect}>
                         <ListItemIcon>
                             <VpnKeyIcon />
                         </ListItemIcon>
-                        <ListItemText onClick={loginWithRedirect}>Login / Register</ListItemText>
+                        <ListItemText>Login / Register</ListItemText>
                     </ListItem>
                 )}
             </List>

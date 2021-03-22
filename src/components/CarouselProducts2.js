@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { Grid } from '@material-ui/core';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -107,7 +108,6 @@ const CarouselProducts2 = () => {
             >
                 {products.map((product) => {
                     const { id, image, category, name, price } = product;
-
                     if (category === 'office') {
                         return (
                             <Grid key={id} className='container__carousel_products' item container justify='center' alignItems='center'>
