@@ -16,3 +16,10 @@
 .img__container img {
     width: 40px;
 }
+.container__name__user {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    justify-content: center;
+}

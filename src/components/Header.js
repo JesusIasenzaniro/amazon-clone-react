@@ -21,7 +21,18 @@ export const ButtonStyled = withStyles(() => ({
         backgroundColor: 'transparent',
         color: 'white',
         fontSize: '12px',
-        margin: '1px',
+        marginRight: '10px',
+        '&:hover': {
+            backgroundColor: 'white',
+            color: '#FF9900',
+        },
+    },
+}))(Button);
+export const ButtonStyled1 = withStyles(() => ({
+    root: {
+        backgroundColor: 'transparent',
+        color: 'white',
+        fontSize: '12px',
         '&:hover': {
             backgroundColor: 'white',
             color: '#FF9900',
@@ -58,27 +69,44 @@ function Header() {
                 </Grid>
                 <Hidden mdDown>
                     <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
+                        {user ? (
+                            <div className='container__name__user'>
+                                {' '}
+                                <h5> Hello, {user ? user.given_name : 'user'}</h5>{' '}
+                            </div>
+                        ) : (
+                            <div className='container__header__items' onClick={loginWithRedirect}>
+                                <ButtonStyled1>
+                                    <h5>Register</h5>
+                                </ButtonStyled1>
+                            </div>
+                        )}
+                    </Grid>
+                </Hidden>
+                <Hidden mdDown>
+                    <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
                         <ButtonStyled>
                             {myUser ? (
                                 <div>
-                                    <p
+                                    <h5
                                         onClick={() => {
                                             clearCart();
                                             logout({ returnTo: window.location.origin });
                                         }}
                                     >
-                                        <h5> Hello, {user ? user.given_name : null}</h5>
-                                    </p>
-                                    <h5> Log out</h5>
+                                        {' '}
+                                        Log out
+                                    </h5>
                                 </div>
                             ) : (
-                                <div className='options__container'>
-                                    <h5 onClick={loginWithRedirect}>Hello, log in or register</h5>
+                                <div className='options__container' onClick={loginWithRedirect}>
+                                    <h5> Log in </h5>
                                 </div>
                             )}
                         </ButtonStyled>
                     </Grid>
                 </Hidden>
+
                 <Hidden xsDown>
                     <Grid item lg={6} md={8} sm={7} xs={3} className='container__search__input'>
                         <SearchInput />
@@ -88,14 +116,14 @@ function Header() {
                 <Hidden mdDown>
                     <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
                         <Link to='/ProductsPages' className='Link'>
-                            <ButtonStyled>
+                            <ButtonStyled1>
                                 <h5>Products</h5>
-                            </ButtonStyled>
+                            </ButtonStyled1>
                         </Link>
                     </Grid>
                 </Hidden>
                 <Grid item lg={1} md={1} sm={1} xs={1} container justify='center' className='container__header__items'>
-                    <ButtonStyled>
+                    <ButtonStyled1>
                         <div className='shopping__container'>
                             <div className='icon__container'>
                                 <Link to='/CartPage'>
@@ -104,13 +132,13 @@ function Header() {
                             </div>
                             <div>{total_items}</div>
                         </div>
-                    </ButtonStyled>
+                    </ButtonStyled1>
                 </Grid>
                 <Grid item lg={1} md={1} sm={1} xs={1} container justify='center' className='container__header__items'>
                     <DrawerHeader />
                 </Grid>
                 <Hidden smUp>
-                    <Grid item lg={5} md={8} sm={7} xs={12}>
+                    <Grid item lg={5} md={8} sm={7} xs={11}>
                         <SearchInput />
                     </Grid>
                 </Hidden>

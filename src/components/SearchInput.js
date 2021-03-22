@@ -72,7 +72,7 @@ export const SearchInput = () => {
     } = useFilterContext();
 
     const searchProduct = () => {
-        history.push('/ProductsPages');
+        text ? history.push('/ProductsPages') : history.push('/');
     };
 
     const classes = useStyles();

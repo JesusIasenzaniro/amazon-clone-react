@@ -17,6 +17,8 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useUserContext } from '../../context/UserContext';
+import { useAuth0 } from '@auth0/auth0-react';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const useStyles = makeStyles({
     list: {
@@ -28,6 +30,7 @@ const useStyles = makeStyles({
 });
 
 export const DrawerHeader = () => {
+    const { user } = useAuth0();
     const { loginWithRedirect, myUser, logout } = useUserContext();
     const classes = useStyles();
     const [state, setState] = React.useState({
@@ -50,6 +53,22 @@ export const DrawerHeader = () => {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
+                {user ? (
+                    <ListItem button disabled>
+                        <ListItemIcon>
+                            <AccountCircleIcon />
+                        </ListItemIcon>
+                        <ListItemText>Hello, {user.given_name}</ListItemText>
+                    </ListItem>
+                ) : (
+                    <ListItem button disabled>
+                        <ListItemIcon>
+                            <AccountCircleIcon />
+                        </ListItemIcon>
+                        <ListItemText> Welcome user</ListItemText>
+                    </ListItem>
+                )}
+                <Divider />
                 {myUser ? (
                     <ListItem button>
                         <ListItemIcon>
@@ -66,11 +85,11 @@ export const DrawerHeader = () => {
                     </ListItem>
                 )}
             </List>
-            <Divider />
+
             <List>
                 <ListItem button>
                     <ListItemIcon>
-                        <ShoppingCartIcon />
+                        <ShoppingBasketIcon />
                     </ListItemIcon>
                     <Link to='/ProductsPages' className='Link__drawer'>
                         <ListItemText>Products</ListItemText>
@@ -80,7 +99,7 @@ export const DrawerHeader = () => {
             <List>
                 <ListItem button>
                     <ListItemIcon>
-                        <ShoppingBasketIcon />
+                        <ShoppingCartIcon />
                     </ListItemIcon>
                     <Link to='/CartPage' className='Link__drawer'>
                         <ListItemText>Cart</ListItemText>
