@@ -79,7 +79,7 @@ export const SearchInput = () => {
     return (
         <div className='container__search__input'>
             <form>
-                <Paper component='form' className={classes.root}>
+                <Paper className={classes.root}>
                     <InputBase
                         id='standard-full-width'
                         className={classes.input}
@@ -92,8 +92,8 @@ export const SearchInput = () => {
                             shrink: true,
                         }}
                     />
-                    <IconButton className={classes.iconButton} aria-label='search'>
-                        <SearchIcon onClick={searchProduct} />
+                    <IconButton className={classes.iconButton} aria-label='search' onClick={searchProduct}>
+                        <SearchIcon />
                     </IconButton>
                 </Paper>
             </form>
