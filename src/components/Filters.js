@@ -21,13 +21,8 @@ const Filters = () => {
             <div>
                 {categories.map((categorie, index) => {
                     return (
-                        <div className='container__categories'>
-                            <button
-                                key={index}
-                                className={`${category === categorie.toLowerCase() ? 'categorie__button active__categorie' : 'categorie__button'}`}
-                                onClick={updateFilters}
-                                name='category'
-                            >
+                        <div key={index} className='container__categories'>
+                            <button className={`${category === categorie.toLowerCase() ? 'categorie__button active__categorie' : 'categorie__button'}`} onClick={updateFilters} name='category'>
                                 {categorie}
                             </button>
                         </div>
