@@ -15,9 +15,7 @@ const CartColumns = () => {
                 <Grid item lg={2} md={4} sm={4} xs={12}>
                     <h3 className='product__color'>Color</h3>
                 </Grid>
-                <Grid item lg={2} md={2} sm={4} xs={12}>
-                    <div></div>
-                </Grid>
+                <Grid item lg={2} md={2} sm={4} xs={12}></Grid>
             </Grid>
         </Hidden>
     );

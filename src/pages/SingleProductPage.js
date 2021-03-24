@@ -41,8 +41,8 @@ export const SingleProductPage = () => {
     const { stock } = product;
 
     return (
-        <div className='container__single__product'>
-            <Grid container justify='space-around'>
+        <Grid className='container__single__product'>
+            <Grid container justify='space-evenly'>
                 <Gallery {...product} />
                 <ProductInfoSingleProductPage {...product} />
                 {stock > 0 && <AddToCart product={product} />}
@@ -51,6 +51,6 @@ export const SingleProductPage = () => {
             <Grid className='container__department__products'>
                 <DepartmentProducts {...product} productChange={productChange} productId={productId} />
             </Grid>
-        </div>
+        </Grid>
     );
 };

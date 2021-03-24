@@ -6,6 +6,7 @@
     box-shadow: 1px 2px 5px -1px #000000;
 }
 .container__list h4 {
+    color: rgb(53, 77, 88);
     text-transform: capitalize;
     /* margin-bottom: 10px; */
 }

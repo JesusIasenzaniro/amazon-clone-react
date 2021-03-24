@@ -25,16 +25,16 @@ export const ButtonStyled = withStyles(() => ({
 const Form = () => {
     const [name, setName] = useState('');
     const [lastName, setlastName] = useState('');
-    const [email, setEmail] = useState('');
+
     const [number, setNumber] = useState();
     const [address, setAddress] = useState('');
 
     const onSubmit = (e) => {
-        console.log(name, lastName, email, number, address);
+        console.log(name, lastName, number, address);
         e.preventDefault();
         setName('');
         setlastName('');
-        setEmail('');
+
         setNumber('');
         setAddress('');
     };
@@ -105,7 +105,7 @@ const Form = () => {
                 </ul>
                 {/* <Divider /> */}
                 <Grid container justify='center' className='submit__button'>
-                    {name && lastName && email && number && address ? (
+                    {name && lastName && number && address ? (
                         <ButtonStyled type='submit'>
                             <Link className='Link' to='/checkout'>
                                 Submit

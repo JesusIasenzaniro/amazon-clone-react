@@ -89,7 +89,7 @@ export const DrawerHeader = () => {
             <List>
                 <ListItem button>
                     <ListItemIcon>
-                        <ShoppingBasketIcon />
+                        <ShoppingCartIcon />
                     </ListItemIcon>
                     <Link to='/ProductsPages' className='Link__drawer'>
                         <ListItemText>Products</ListItemText>
@@ -99,7 +99,7 @@ export const DrawerHeader = () => {
             <List>
                 <ListItem button>
                     <ListItemIcon>
-                        <ShoppingCartIcon />
+                        <ShoppingBasketIcon />
                     </ListItemIcon>
                     <Link to='/CartPage' className='Link__drawer'>
                         <ListItemText>Cart</ListItemText>

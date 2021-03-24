@@ -10,6 +10,7 @@
     margin-bottom: 15px;
 }
 .container__title__name h4 {
+    color: rgb(53, 77, 88);
     text-transform: capitalize;
 }
 .grid__images {

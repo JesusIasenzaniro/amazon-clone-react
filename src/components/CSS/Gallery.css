@@ -3,8 +3,8 @@
     margin-top: 10px;
 }
 .main__picture {
-    width: 350px;
-    height: 380px;
+    width: 580px;
+    height: 580px;
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
@@ -26,7 +26,7 @@
     border: 2px solid rgb(53, 77, 88);
 }
 .mini__gallery {
-    margin-left: 10px;
+    margin-left: 20px !important;
 }
 .container__advise {
     text-align: center;
@@ -153,6 +153,7 @@
     .titles,
     .container__advise {
         text-align: center;
+        margin: 20px 0;
     }
 
     .mini__gallery {
@@ -171,6 +172,16 @@
     }
     .image__product {
         width: 180px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main__picture {
+        width: 220px;
+        height: 220px;
+    }
+    .mini__gallery {
+        margin-left: 0px !important;
     }
 }
 

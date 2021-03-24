@@ -33,8 +33,8 @@ export const Cart = () => {
                 <div className='cart__item__container'>
                     {cart.map((item) => {
                         return (
-                            <div>
-                                <CartItem key={item.id} {...item} />
+                            <div key={item.id}>
+                                <CartItem {...item} />
                                 <Divider />
                             </div>
                         );
