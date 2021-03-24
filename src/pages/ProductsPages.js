@@ -7,7 +7,7 @@ import Container from '@material-ui/core/Container';
 import '../components/CSS/ProductsPages.css';
 const ProductsPages = () => {
     return (
-        <Container maxWidth='lg'>
+        <Container maxWidth='xl'>
             <Grid className='container__filters__list'>
                 <Grid>
                     <Filters />

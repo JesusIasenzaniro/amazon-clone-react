@@ -70,7 +70,7 @@ const Filters = () => {
                 <div className='container__price__filter'>
                     <h5>Price</h5>
                     <p className='price__filter'>{formatPrice(price)}</p>
-                    <input type='range' name='price' onChange={updateFilters} min={min_price} max={max_price} value={price}></input>
+                    <input type='range' name='price' onChange={updateFilters} min={min_price} max={max_price} value={price} className='input__range'></input>
                 </div>
 
                 <div className='container__shipping'>

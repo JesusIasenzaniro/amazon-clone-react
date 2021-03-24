@@ -34,15 +34,8 @@
     outline: none;
     text-transform: capitalize;
     border-bottom: 2px solid transparent;
+    cursor: pointer;
 }
-/* .categorie__button:hover {
-    transition-duration: 0.2s;
-    border-bottom: 2px solid rgb(120, 166, 187);
-}
-.categorie__button:focus-within {
-    transition-duration: 0.2s;
-    border-bottom: 2px solid rgb(120, 166, 187);
-} */
 .active__categorie {
     transition-duration: 0.2s;
     border-bottom: 2px solid rgb(120, 166, 187);
@@ -58,6 +51,7 @@
     padding: 10px;
     background-color: rgb(120, 166, 187);
     outline: none;
+    cursor: pointer;
 }
 
 .container__colors h5 {
@@ -104,6 +98,9 @@
 .price__filter {
     color: rgb(72, 103, 117);
 }
+.input__range {
+    cursor: pointer;
+}
 .container__shipping {
     display: flex;
     justify-content: center;
@@ -120,6 +117,7 @@
 }
 .shipping__box {
     margin-left: 10px;
+    cursor: pointer;
 }
 .container__clear__button {
     margin-top: 30px;
@@ -139,8 +137,3 @@
 .clear__btn:hover {
     background-color: rgb(72, 103, 117);
 }
-/* @media (max-width: 960px) {
- {
-        text-align: center;
-    }
-} */
