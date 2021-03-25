@@ -79,9 +79,9 @@ const CarouselProducts3 = () => {
                     desktop: {
                         breakpoint: {
                             max: 3000,
-                            min: 1024,
+                            min: 1240,
                         },
-                        items: 3,
+                        items: 5,
                         partialVisibilityGutter: 40,
                     },
                     mobile: {
@@ -95,9 +95,9 @@ const CarouselProducts3 = () => {
                     tablet: {
                         breakpoint: {
                             max: 1024,
-                            min: 464,
+                            min: 720,
                         },
-                        items: 2,
+                        items: 3,
                         partialVisibilityGutter: 30,
                     },
                 }}

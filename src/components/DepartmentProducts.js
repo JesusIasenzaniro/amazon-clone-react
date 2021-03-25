@@ -9,7 +9,8 @@ import Star from './GeneralStyles/StarStyled';
 
 export const DepartmentProducts = ({ productChange, productId, stars }) => {
     const { products } = useProductsContext();
-    const handleProducts = products.filter((product) => product.category === productChange);
+
+    const handleProducts = products.filter((product) => product.category === productChange && product.id !== productId);
     if (handleProducts.length >= 3) {
         return (
             <div>
@@ -61,31 +62,27 @@ export const DepartmentProducts = ({ productChange, productId, stars }) => {
                     slidesToSlide={1}
                     swipeable={true}
                 >
-                    {products.map((product) => {
+                    {handleProducts.map((product) => {
                         const { id, image, category, name } = product;
-                        if (category === productChange) {
-                            if (id === productId) {
-                                return null;
-                            }
-                            return (
-                                <Grid key={id} className='container__carousel_products' container justify='center' alignItems='center'>
-                                    <main>
-                                        <div className='product__department__details'>
-                                            <h4>{name}</h4>
-                                        </div>
-                                        <div className='product__department__details'>
-                                            <h4>{category}</h4>
-                                        </div>
-                                        <div>
-                                            <Star stars={stars} />
-                                        </div>
-                                        <Link to={`/ProductsPages/${id}`}>
-                                            <img src={image} alt='images' width='230px' height='220px' />
-                                        </Link>
-                                    </main>
-                                </Grid>
-                            );
-                        }
+
+                        return (
+                            <Grid key={id} className='container__carousel_products' container justify='center' alignItems='center'>
+                                <main>
+                                    <div className='product__department__details'>
+                                        <h4>{name}</h4>
+                                    </div>
+                                    <div className='product__department__details'>
+                                        <h4>{category}</h4>
+                                    </div>
+                                    <div>
+                                        <Star stars={stars} />
+                                    </div>
+                                    <Link to={`/ProductsPages/${id}`}>
+                                        <img src={image} alt='images' width='230px' height='220px' />
+                                    </Link>
+                                </main>
+                            </Grid>
+                        );
                     })}
                 </Carousel>
             </div>

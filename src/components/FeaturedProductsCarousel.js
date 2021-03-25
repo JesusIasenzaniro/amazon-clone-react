@@ -15,7 +15,7 @@ export const ButtonStyled = withStyles(() => ({
     root: {
         backgroundColor: 'rgb(120, 166, 187)',
         color: 'white',
-        fontSize: '15px',
+        fontSize: '26px',
         margin: '1px',
         '&:hover': {
             backgroundColor: 'rgb(31, 69, 87)',
@@ -77,9 +77,9 @@ export const FeaturedProductsCarousel = () => {
                     desktop: {
                         breakpoint: {
                             max: 3000,
-                            min: 1024,
+                            min: 1240,
                         },
-                        items: 3,
+                        items: 5,
                         partialVisibilityGutter: 40,
                     },
                     mobile: {
@@ -93,9 +93,9 @@ export const FeaturedProductsCarousel = () => {
                     tablet: {
                         breakpoint: {
                             max: 1024,
-                            min: 464,
+                            min: 720,
                         },
-                        items: 2,
+                        items: 3,
                         partialVisibilityGutter: 30,
                     },
                 }}

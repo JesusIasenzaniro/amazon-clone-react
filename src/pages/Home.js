@@ -11,7 +11,6 @@ const Home = () => {
             <FeaturedProducts />
             <FeaturedProductsCarousel />
             <CarouselProducts2 />
-            <CarouselProducts3 />
         </div>
     );
 };
