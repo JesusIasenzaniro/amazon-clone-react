@@ -60,87 +60,90 @@ function Header() {
     return (
         <AppBar position='static' style={{ backgroundColor: '#030c1bf6' }}>
             <Grid container alignItems='center' justify='space-around'>
-                <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
-                    <Link to='/'>
-                        <div className='img__container'>
-                            <img src={Amazon__logo} alt='amazon__logo' />
-                        </div>
-                    </Link>
-                </Grid>
-                <Hidden mdDown>
-                    <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
-                        {user ? (
-                            <div className='container__name__user'>
-                                {' '}
-                                <h5> Hello, {user ? user.given_name : 'user'}</h5>{' '}
+                <Grid container alignItems='center' item lg={2} md={2} sm={2} xs={2}>
+                    <Grid item lg={4} md={5} sm={5} xs={10} className='container__header__items'>
+                        <Link to='/'>
+                            <div className='img__container'>
+                                <img src={Amazon__logo} alt='amazon__logo' />
                             </div>
-                        ) : (
-                            <ButtonStyled1 onClick={loginWithRedirect}>
-                                <div className='container__header__items'>
-                                    <h5>Register</h5>
-                                </div>
-                            </ButtonStyled1>
-                        )}
-                    </Grid>
-                </Hidden>
-                <Hidden mdDown>
-                    <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
-                        {myUser ? (
-                            <div>
-                                <ButtonStyled
-                                    onClick={() => {
-                                        clearCart();
-                                        logout({ returnTo: window.location.origin });
-                                    }}
-                                >
-                                    <h5>Log out</h5>
-                                </ButtonStyled>
-                            </div>
-                        ) : (
-                            <ButtonStyled onClick={loginWithRedirect}>
-                                <div className='options__container'>
-                                    <h5> Log in </h5>
-                                </div>
-                            </ButtonStyled>
-                        )}
-                    </Grid>
-                </Hidden>
-
-                <Hidden xsDown>
-                    <Grid item lg={6} md={8} sm={7} xs={3} className='container__search__input'>
-                        <SearchInput />
-                    </Grid>
-                </Hidden>
-
-                <Hidden mdDown>
-                    <Grid item lg={1} md={1} sm={1} xs={1} className='container__header__items'>
-                        <Link to='/ProductsPages' className='Link'>
-                            <ButtonStyled1>
-                                <h5>Products</h5>
-                            </ButtonStyled1>
                         </Link>
                     </Grid>
-                </Hidden>
-                <Grid item lg={1} md={1} sm={1} xs={1} container justify='center' className='container__header__items'>
-                    <ButtonStyled1>
-                        <div className='shopping__container'>
-                            <div className='icon__container'>
-                                <Link to='/CartPage'>
-                                    <IconStyled />
-                                </Link>
+                    <Hidden xsDown>
+                        <Grid item lg={4} md={5} sm={3} xs={1} className='container__header__items'>
+                            {user ? (
+                                <div className='container__name__user'>
+                                    {' '}
+                                    <h5> Hello, {user ? user.given_name : 'user'}</h5>{' '}
+                                </div>
+                            ) : (
+                                <ButtonStyled1 onClick={loginWithRedirect}>
+                                    <div className='container__header__items'>
+                                        <h5>Register</h5>
+                                    </div>
+                                </ButtonStyled1>
+                            )}
+                        </Grid>
+                    </Hidden>
+                    <Hidden mdDown>
+                        <Grid item lg={2} md={2} sm={1} xs={1} className='container__header__items'>
+                            {myUser ? (
+                                <div>
+                                    <ButtonStyled
+                                        onClick={() => {
+                                            clearCart();
+                                            logout({ returnTo: window.location.origin });
+                                        }}
+                                    >
+                                        <h5>Log out</h5>
+                                    </ButtonStyled>
+                                </div>
+                            ) : (
+                                <ButtonStyled onClick={loginWithRedirect}>
+                                    <div className='options__container'>
+                                        <h5> Log in </h5>
+                                    </div>
+                                </ButtonStyled>
+                            )}
+                        </Grid>
+                    </Hidden>
+                </Grid>
+                <Grid container item lg={8} md={8} sm={8} xs={5}>
+                    <Grid item lg={12} md={12} sm={12} xs={12}>
+                        <SearchInput />
+                    </Grid>
+                </Grid>
+
+                <Grid container alignItems='center' item lg={2} md={2} sm={2} xs={4}>
+                    <Hidden mdDown>
+                        <Grid item lg={5} md={3} sm={1} xs={1} className='container__header__items'>
+                            <Link to='/ProductsPages' className='Link'>
+                                <ButtonStyled1>
+                                    <h5>Products</h5>
+                                </ButtonStyled1>
+                            </Link>
+                        </Grid>
+                    </Hidden>
+                    <Grid item lg={2} md={7} sm={8} xs={6} container justify='center' className='container__header__items'>
+                        <ButtonStyled1>
+                            <div className='shopping__container'>
+                                <div className='icon__container'>
+                                    <Link to='/CartPage'>
+                                        <IconStyled />
+                                    </Link>
+                                </div>
+                                <div>{total_items}</div>
                             </div>
-                            <div>{total_items}</div>
-                        </div>
-                    </ButtonStyled1>
+                        </ButtonStyled1>
+                    </Grid>
+                    <Grid item lg={4} md={1} sm={1} xs={4} container justify='center' className='container__header__items'>
+                        <DrawerHeader />
+                    </Grid>
                 </Grid>
-                <Grid item lg={1} md={1} sm={1} xs={1} container justify='center' className='container__header__items'>
-                    <DrawerHeader />
-                </Grid>
-                <Hidden smUp>
+                {/* <Hidden smUp>
                     <Grid item lg={5} md={8} sm={7} xs={11}>
                         <SearchInput />
                     </Grid>
-                </Hidden>
+                </Hidden> */}
             </Grid>
         </AppBar>
     );
