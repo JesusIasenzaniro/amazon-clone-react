@@ -61,7 +61,7 @@ function Header() {
         <AppBar position='static' style={{ backgroundColor: '#030c1bf6' }}>
             <Grid container alignItems='center' justify='space-around'>
                 <Grid container alignItems='center' item lg={2} md={2} sm={2} xs={2}>
-                    <Grid item lg={4} md={5} sm={5} xs={10} className='container__header__items'>
+                    <Grid item lg={4} md={5} sm={6} xs={10} className='container__header__items'>
                         <Link to='/'>
                             <div className='img__container'>
                                 <img src={Amazon__logo} alt='amazon__logo' />
@@ -107,7 +107,7 @@ function Header() {
                         </Grid>
                     </Hidden>
                 </Grid>
-                <Grid container item lg={8} md={8} sm={8} xs={5}>
+                <Grid container item lg={8} md={8} sm={7} xs={5}>
                     <Grid item lg={12} md={12} sm={12} xs={12}>
                         <SearchInput />
                     </Grid>
@@ -123,7 +123,7 @@ function Header() {
                             </Link>
                         </Grid>
                     </Hidden>
-                    <Grid item lg={2} md={7} sm={8} xs={6} container justify='center' className='container__header__items'>
+                    <Grid item lg={3} md={7} sm={6} xs={6} container justify='center' className='container__header__items'>
                         <ButtonStyled1>
                             <div className='shopping__container'>
                                 <div className='icon__container'>
@@ -135,7 +135,7 @@ function Header() {
                             </div>
                         </ButtonStyled1>
                     </Grid>
-                    <Grid item lg={4} md={1} sm={1} xs={4} container justify='center' className='container__header__items'>
+                    <Grid item lg={4} md={1} sm={5} xs={4} container justify='center' className='container__header__items'>
                         <DrawerHeader />
                     </Grid>
                 </Grid>
