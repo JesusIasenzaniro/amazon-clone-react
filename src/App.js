@@ -12,33 +12,36 @@ import PrivateRoute from './pages/PrivateRoute';
 import AuthWrapper from './pages/AuthWrapper';
 import ScrollToTop from './components/ScrollToTop';
 import FormPage from './pages/FormPage';
+import './App.css';
 function App() {
     return (
         <AuthWrapper>
             <Router>
                 <ScrollToTop>
                     <Header />
-                    <Switch>
-                        <Route exact path='/'>
-                            <Home />
-                        </Route>
-                        <Route exact path='/CartPage'>
-                            <CartPage />
-                        </Route>
-                        <Route exact path='/FormPage'>
-                            <FormPage />
-                        </Route>
-                        <Route exact path='/ProductsPages'>
-                            <ProductsPages />
-                        </Route>
-                        <Route exact path='/ProductsPages/:id' children={<SingleProductPage />} />
-                        <PrivateRoute exact path='/Checkout'>
-                            <Checkout />
-                        </PrivateRoute>
-                        <Route exact path='*'>
-                            <Error />
-                        </Route>
-                    </Switch>
+                    <div className='body__container'>
+                        <Switch>
+                            <Route exact path='/'>
+                                <Home />
+                            </Route>
+                            <Route exact path='/CartPage'>
+                                <CartPage />
+                            </Route>
+                            <Route exact path='/FormPage'>
+                                <FormPage />
+                            </Route>
+                            <Route exact path='/ProductsPages'>
+                                <ProductsPages />
+                            </Route>
+                            <Route exact path='/ProductsPages/:id' children={<SingleProductPage />} />
+                            <PrivateRoute exact path='/Checkout'>
+                                <Checkout />
+                            </PrivateRoute>
+                            <Route exact path='*'>
+                                <Error />
+                            </Route>
+                        </Switch>
+                    </div>
                     <Footer />
                 </ScrollToTop>
             </Router>

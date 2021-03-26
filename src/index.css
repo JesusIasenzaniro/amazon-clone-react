@@ -5,7 +5,7 @@
 body {
     background-color: rgb(230, 255, 255);
     font-family: 'Roboto', sans-serif;
-    /* min-height: 500px; */
+    min-height: 100vh;
 }
 
 .Link {

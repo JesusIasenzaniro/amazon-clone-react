@@ -52,9 +52,7 @@
     cursor: pointer;
     text-decoration: underline white;
 }
-/* .use__terms {
-    padding: 5px 5px;
-} */
+
 .options,
 .copyright {
     display: flex;
