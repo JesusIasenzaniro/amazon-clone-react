@@ -1,6 +1,6 @@
 .container__info {
     padding: 20px;
-    width: 440px;
+    width: 360px;
     background-color: white;
     height: fit-content;
     margin: 20px 15px;
@@ -55,7 +55,11 @@
 .dropdown__button {
     margin-top: 10px;
 }
-.container__quatity {
+.container__quantity__title {
+    text-align: center;
+    color: rgb(57, 90, 105);
+}
+.container__quantity {
     margin-right: 5px;
 }
 .container__color {

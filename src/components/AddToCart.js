@@ -22,7 +22,7 @@ const ButtonStyled = withStyles((theme) => ({
         },
     },
 }))(Button);
-const ButtonStyled2 = withStyles((theme) => ({
+const ButtonStyled2 = withStyles(() => ({
     root: {
         width: ' 100%',
         marginTop: '10px',
@@ -64,46 +64,62 @@ export const AddToCart = ({ product }) => {
     };
 
     return (
-        <Grid className='container__add'>
-            <Link to='/CartPage' className='Link' onClick={() => addToCart(id, mainColor, amount, product)}>
-                <Grid>
-                    <ButtonStyled>ADD TO CART</ButtonStyled>
-                </Grid>
-            </Link>
-            {user ? (
-                <Link to='/FormPage' className='Link' onClick={() => addToCart(id, mainColor, amount, product)}>
+        <Grid>
+            <Grid className='container__add'>
+                <Link to='/CartPage' className='Link' onClick={() => addToCart(id, mainColor, amount, product)}>
                     <Grid>
-                        <ButtonStyled2>BUY NOW</ButtonStyled2>
+                        <ButtonStyled>ADD TO CART</ButtonStyled>
                     </Grid>
                 </Link>
-            ) : (
-                <Grid onClick={loginWithRedirect}>
-                    <ButtonStyled2>BUY NOW</ButtonStyled2>
-                </Grid>
-            )}
-            <Grid container justify='center' alignItems='center' className='container__amount'>
-                <div className='container__quatity'>
-                    <AmountButtons amount={amount} increase={increase} decrease={decrease} />{' '}
-                </div>
-            </Grid>
-            <Grid container justify='center' alignItems='center'>
-                <div className='container__color'>
-                    <Grid container>
-                        <div className='container__color__title'>Color: </div>
-                        {colors.map((color, index) => {
-                            return (
-                                <button key={index} style={{ background: color }} className={`${mainColor === color ? 'color__btn active2' : 'color__btn'}`} onClick={() => setMainColor(color)}>
-                                    {mainColor === color ? <CheckIcon style={{ width: '19px', color: 'white' }} /> : null}
-                                </button>
-                            );
-                        })}
+                {user ? (
+                    <Link to='/FormPage' className='Link' onClick={() => addToCart(id, mainColor, amount, product)}>
+                        <Grid>
+                            <ButtonStyled2>BUY NOW</ButtonStyled2>
+                        </Grid>
+                    </Link>
+                ) : (
+                    <Grid onClick={loginWithRedirect}>
+                        <ButtonStyled2>BUY NOW</ButtonStyled2>
                     </Grid>
-                </div>
+                )}
             </Grid>
-            <Grid container justify='center' alignItems='center' className='container__secure__transaction'>
-                <LockIcon style={{ color: 'rgb(57, 90, 105)' }}></LockIcon>
 
-                <div className='secure__transaction'>Secure Transaction</div>
+            <Grid className='container__add'>
+                <Grid>
+                    <div className='container__quantity__title'>
+                        <h4>Quantity:</h4>
+                    </div>
+                    <Grid container justify='center' alignItems='center' className='container__amount'>
+                        <div className='container__quantity'>
+                            <AmountButtons amount={amount} increase={increase} decrease={decrease} />{' '}
+                        </div>
+                    </Grid>
+                </Grid>
+                <Grid>
+                    <Grid item container justify='center' alignItems='center'>
+                        <div className='container__color'>
+                            <Grid container>
+                                <div className='container__color__title'>Color: </div>
+                                {colors.map((color, index) => {
+                                    return (
+                                        <button
+                                            key={index}
+                                            style={{ background: color }}
+                                            className={`${mainColor === color ? 'color__btn active2' : 'color__btn'}`}
+                                            onClick={() => setMainColor(color)}
+                                        >
+                                            {mainColor === color ? <CheckIcon style={{ width: '19px', color: 'white' }} /> : null}
+                                        </button>
+                                    );
+                                })}
+                            </Grid>
+                        </div>
+                    </Grid>
+                    <Grid container justify='center' alignItems='center' className='container__secure__transaction'>
+                        <LockIcon style={{ color: 'rgb(57, 90, 105)' }}></LockIcon>
+                        <div className='secure__transaction'>Secure Transaction</div>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     );
