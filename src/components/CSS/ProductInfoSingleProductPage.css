@@ -1,9 +1,9 @@
 .container__info {
     padding: 20px;
-    width: 300px;
+    width: 440px;
     background-color: white;
     height: fit-content;
-    margin: 30px;
+    margin: 20px 15px;
     padding-top: 20px;
     border-radius: 10px;
     box-shadow: 1px 2px 5px -1px #000000;
@@ -44,7 +44,7 @@
     width: 300px;
     background-color: white;
     height: fit-content;
-    margin: 30px;
+    margin: 20px 20px;
     padding-top: 20px;
     border-radius: 10px;
     box-shadow: 1px 2px 5px -1px #000000;

@@ -66,7 +66,6 @@ Fade.propTypes = {
 };
 
 export const Gallery = ({ images = [{ url: '' }] }) => {
-    const [showInfo, setShowInfo] = useState(false);
     const [main, setMain] = useState(images[0]);
     const [mainModal, setMainModal] = useState(images[0]);
     const classes = useStyles();
@@ -83,23 +82,15 @@ export const Gallery = ({ images = [{ url: '' }] }) => {
     return (
         <Grid>
             <Grid className='container__main__picture'>
-                <img
-                    src={main.url}
-                    alt='main_picture'
-                    className='main__picture'
-                    style={{ backgroundColor: 'white' }}
-                    onClick={handleOpen}
-                    onMouseEnter={() => setShowInfo(!showInfo)}
-                    onMouseLeave={() => setShowInfo(!showInfo)}
-                />
+                <img src={main.url} alt='main_picture' className='main__picture' style={{ backgroundColor: 'white' }} onClick={handleOpen} />
             </Grid>
-            {showInfo && (
-                <Grid className='container__advise'>
-                    <TypographyStyled>Haz click para obtener una vista ampliada</TypographyStyled>
-                </Grid>
-            )}
+
+            <Grid className='container__advise'>
+                <TypographyStyled>Haz click para obtener una vista ampliada</TypographyStyled>
+            </Grid>
+
             <div>
-                <Grid item container className='mini__gallery'>
+                <Grid container justify='center' item lg={12} md={12} sm={12} xs={12} className='mini__gallery'>
                     {images.map((image, index) => {
                         return <img className='mini__img' src={image.url} key={index} alt={image.filename} style={{ backgroundColor: 'white' }} onMouseOver={() => setMain(images[index])} />;
                     })}
