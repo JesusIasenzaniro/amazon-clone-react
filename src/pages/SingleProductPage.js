@@ -44,12 +44,9 @@ export const SingleProductPage = () => {
         <Grid className='container__single__product'>
             <Grid container justify='center'>
                 <Gallery {...product} />
-
                 <ProductInfoSingleProductPage {...product} />
-
                 {stock > 0 && <AddToCart product={product} />}
             </Grid>
-
             <Grid className='container__department__products'>
                 <DepartmentProducts {...product} productChange={productChange} productId={productId} />
             </Grid>
